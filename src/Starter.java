@@ -26,18 +26,25 @@ public class Starter {
               
         Vet v=new Vet();
         
-        java.util.Scanner teclado=new java.util.Scanner(System.in);
-        System.out.println("Ingrese su id para remover mascota: ");
-        int id=teclado.nextInt(); 
+        //java.util.Scanner teclado=new java.util.Scanner(System.in);
+        //System.out.println("Ingrese su id para remover mascota: ");
+        //int id=teclado.nextInt(); 
         
-        v.removePet(id); //removerMascota(id);12                
-        lectu(leer);
+        //v.removePet(id); //removerMascota(id);12                
+        //lectu(leer);
+        while(leer.hasNextLine()){
+            String texto= leer.nextLine();
+            System.out.println(texto);
+        }
+        
     }
     public static void lectu (Scanner leer){
         
         while (leer.hasNext()){
             String lectura= leer.next();       
             System.out.println(lectura);
+            ArrayList<String> Datos= new ArrayList<String>();
+            Datos.add(lectura);
         }
     }
     
